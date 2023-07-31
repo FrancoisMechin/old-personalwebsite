@@ -1,0 +1,187 @@
+/*
+* {
+    $phone: 450px;
+    $tablet: 950px;
+    $laptop: 1280px;
+    $desktop: 1440px;
+
+} 
+*/
+
+@media screen and (min-width: 2300px){
+    .infocards{
+        gap: 60px;
+        margin-left: 5.7%;
+    }
+    .card, .backcard{
+        width: 20vw;
+    }
+    .backcard{
+        margin-top: 2vw;
+    }
+    .middlebutton{
+        margin-top: 6vw;
+    }
+
+}
+
+@media screen and (max-width: 1440px){
+    label{
+        font-size: 15px;
+
+    }
+
+    .blocarrow{
+        padding: 10px 0px;
+    }
+
+    .infocards{
+        margin-top: 4%;
+
+    }
+}
+
+@media screen and (max-width: 1280px){
+    .hero{
+        font-size: 60px;
+    }
+
+    #spanarrow{
+        font-size: 13px;
+    }
+
+    #arrow{
+        width: 30px;
+        height: 20px;
+    }
+
+    .sel{
+        font-size: 13px;
+    }
+
+    .sel__placeholder {
+        font-size: 13PX;
+      }
+
+    label{
+        font-size: 14px;
+        margin-left: 30px;
+    }
+
+    .card-excerpt{
+        font-size: 15px;
+
+    }
+
+    .item-title{
+        font-size: 14px;
+
+    }
+
+}
+
+
+@media screen and (max-width: 950px){
+    .hero{
+        font-size: 45px;
+    }
+    .blocarrow{
+        margin-bottom: 1.5vmin;
+
+    }
+    .middlebutton{
+        margin-top: 3%;
+        
+    }
+
+    .middlebutton button{
+        font-size: 15px;
+        width: 230px;
+        height: 50px;
+    }
+
+    .infocards{
+        margin-top: 6%;
+        margin-left: 6px;
+    }
+
+
+}
+
+@media screen and (max-width: 725px){
+    label{
+        display: none;
+    }
+
+    .line{
+        font-size: 20px;
+    }
+
+    .environment{
+        height: 200px;
+    }
+
+    @keyframes typewriter {
+        from {
+            width: 0;
+        }
+    
+        to {
+            width: 18em;
+        }
+    }
+}
+
+@media screen and (max-width: 450px){
+    .hero{
+        font-size: 27px;
+    }
+
+    .environment{
+        height: 160px;
+        padding: 0;
+    }
+
+
+    #spanarrow{
+        font-size: 10px;
+    }
+
+    .multi-button{
+        margin-top: 5%;
+
+    }
+
+    #arrow2{
+        display: flex;
+        float: right;
+        height: 15px;
+        width: 15px;
+        opacity: 0.6;
+        margin-left: 130px;
+    }
+    #arrow{
+        display: none;
+    }
+
+    .infocards{
+        margin-left: 0;
+
+    }
+
+
+
+}
+
+@media screen and (max-width: 420px){
+    .card{
+        width: 330px;
+    }
+
+    .card .rb-container ul.rb li {
+
+        margin-left: 6em;
+
+     
+    }
+}

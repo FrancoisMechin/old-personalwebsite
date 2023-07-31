@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="loading.css">
+    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="icon" type="image/svg" href="img/computer-svgrepo-com.svg">
+
+    <!-- Primary Meta Tags -->
+    <title>Développeur Web/Web Mobile</title>
+    <meta name="title" content="Développeur Web\Web Mobile">
+    <meta name="description" content="Francois MECHIN, développeur full-stack en formation.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://francoismechin.com/">
+    <meta property="og:title" content="Développeur Web\Web Mobile">
+    <meta property="og:description" content="Francois MECHIN, développeur full-stack en formation.">
+    <meta property="og:image" content="https://francoismechin.com/img/code-ppa-digital.jpg">
+
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://francoismechin.com/">
+    <meta property="twitter:title" content="Développeur Web\Web Mobile">
+    <meta property="twitter:description" content="Francois MECHIN, développeur full-stack en formation.">
+    <meta property="twitter:image" content="https://francoismechin.com/img/code-ppa-digital.jpg">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="introduce is-active" id="introduce">
+        <p class="line anim-typewriter">Bonjour.</p>
+        <BR>
+        <p class="line anim-typewriter">Je vous souhaite la bienvenue.</p>
+    </div>
+
+
+    <section>
+        <div class="hero-container">
+            <a href="home.html">
+                <div class="environment"></div>
+                <h2 class="hero glitch layers" data-text="Développeur Web"><span>Développeur Web</span></h2>
+            </a>
+        </div>
+    </section>
+
+    <div class="multi-button">
+        <!-- ///////////////////////// -->
+        <div class="sel sel--black-panther">
+            <select id="select-profession" name="select-profession" id="select-profession"
+                onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+                <option value="" disabled>Mes projets externe</option>
+                <option id="sitedylice" value="sitedylice">Dylice - Artiste RAP</option>
+                <option id="projetafpa" value="projetafpa">Apilicious - AFPA</option>
+            </select>
+        </div>
+        <!-- ///////////////////////// -->
+        <input name="buttons" type="checkbox" id="presentation" checked="checked">
+        <label for="presentation">
+            <span>
+                <?xml version="1.0" encoding="UTF-8"?>
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
+                    <rect x="8" y="2" width="8" height="4" rx="1" ry="1" />
+                </svg>
+            </span>Présentation</label>
+        <input name="buttons" type="checkbox" id="experiences">
+        <label for="experiences">
+            <span>
+                <?xml version="1.0" encoding="UTF-8"?>
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="6" cy="6" r="3" />
+                    <circle cx="6" cy="18" r="3" />
+                    <line x1="20" x2="8.12" y1="4" y2="15.88" />
+                    <line x1="14.47" x2="20" y1="14.48" y2="20" />
+                    <line x1="8.12" x2="12" y1="8.12" y2="12" />
+                </svg>
+            </span>Experiences</label>
+        <input name="buttons" type="checkbox" id="compétences" checked="checked">
+        <label for="compétences">
+            <span>
+                <?xml version="1.0" encoding="UTF-8"?>
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2" />
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
+                </svg>
+            </span>Compétences</label>
+        <input name="buttons" type="checkbox" id="formations">
+        <label for="formations">
+            <span>
+                <?xml version="1.0" encoding="UTF-8"?>
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
+                    <rect x="8" y="2" width="8" height="4" rx="1" ry="1" />
+                </svg>
+            </span>Formations</label>
+    </div>
+
+    <section class="infocards">
+        <DIV class="flip-container">
+            <div class="flexcontainer">
+                <div class="card cardperso flipCard" id="cardperso">
+
+                    <div class="card-image"><img
+                            src="https://i.pinimg.com/originals/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg"
+                            alt="user" />
+                    </div>
+                    <div class="card-body">
+
+
+                        <div class="card-date">
+                            <span>FRANCOIS MECHIN</span><br>
+                        </div>
+
+
+                        <div class="card-title">
+                            <h3>Développeur Web</h3>
+                        </div>
+
+                        <div class="card-excerpt">
+                            <div id="divtel">
+                                <img id="phone" src="img/phone-svgrepo-com.svg" height="25px" width="25px"><span
+                                    id="tel"><strong>CENSORED</strong></span>
+                            </div>
+                            <br>
+                            <div id="divmail">
+                                <img id="mail" src="img/mail-svgrepo-com.svg" height="25px"
+                                    width="25px"><span>f.mechin@protonmail.com</span>
+                            </div>
+                            <br>
+                            <div id="divage">
+                                <img id="age" src="img/birthday-cake-svgrepo-com (1).svg" height="25px"
+                                    width="25px"><span>01/05/1998 - 24 ans</span>
+                            </div>
+                            <br>
+                            <div id="divpays">
+                                <img id="pays" src="img/france-svgrepo-com.svg" height="25px"
+                                    width="25px"><span>Français</span>
+                            </div>
+                            <br>
+                            <div id="divlangues">
+                                <img id="langues" src="img/united-kingdom-svgrepo-com.svg" height="25px"
+                                    width="25px"><span>Anglais</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="backcard" id="backcard1">
+                    <div class="contenuback">
+                        <h2 class="hero glitch layers" data-text="Développeur Web">
+                            <span>FRANCOIS MECHIN</span>
+                        </h2>
+                        <br />
+                        <span id="textback">Cliquez sur <strong>"Présentation"</strong> pour retourner la carte !</span>
+                    </div>
+                </div>
+            </div>
+        </DIV>
+        <DIV class="flip-container">
+            <div class="flexcontainer">
+                <div class="card" id="cardxp">
+
+                    <div class="container">
+
+                        <div class="box">
+                            <div class="container-3">
+                            </div>
+                        </div>
+
+                        <div class="leftbox">
+                        </div>
+                        <div class="rightbox">
+                            <div class="rb-container">
+                                <ul class="rb">
+                                    <li class="rb-item" ng-repeat="itembx">
+                                        <div class="timestamp">
+                                            14 mars 2022 à<br> Janvier 2023
+                                        </div>
+                                        <div class="item-title">
+                                            Formation <br> Développement web et web mobile avec anglais renforce </div>
+
+                                    </li>
+                                    <li class="rb-item" ng-repeat="itembx">
+                                        <div class="timestamp">
+                                            Juin 2021 à<br> Statut toujours en cours
+                                        </div>
+                                        <div class="item-title">Auto-entrepreneur <br> Livraison de repas à domicile
+                                        </div>
+
+                                    </li>
+
+                                    <li class="rb-item" ng-repeat="itembx">
+                                        <div class="timestamp">
+                                            Janvier 2019 à <br> Mai 2019 <br> Evreux
+                                        </div>
+                                        <div class="item-title">Vendeur <br> Boutique de cigarette electronique</div>
+
+                                    </li>
+
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="backcard flipCard" id="backcard2">
+                    <div class="contenuback">
+                        <h2 class="hero glitch layers" data-text="Développeur Web">
+                            <span>FRANCOIS MECHIN</span>
+                        </h2>
+                        <br />
+                        <span id="textback">Cliquez sur <strong>"Experiences"</strong> pour retourner la carte !</span>
+                    </div>
+                </div>
+            </div>
+        </DIV>
+        <DIV class="flip-container">
+            <div class="flexcontainer">
+                <div class="card cardskills flipCard" id="cardskills">
+
+
+                    <div class="card-image"><img
+                            src="https://blog.internshala.com/wp-content/uploads/2021/01/Web-developer-skills.jpg"
+                            alt="user" />
+                    </div>
+
+                    <div class="card-body">
+
+
+                        <div class="card-title">
+                            <h3>Web Development Skills</h3>
+                        </div>
+
+                        <div class="card-excerpt">
+                            <img src="https://dapcontrols.com/uploads-ssl.com/60ca12202162e8fec4f6871e/60ca47d8a9fbf7b14c361904_html5-logo-devextreme-multi-purpose-controls-html-javascript-3.png"
+                                width="60%" />
+                            <BR>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/2560px-PHP-logo.svg.png"
+                                width="20%" />
+                            <img src="https://symfony.com/logos/symfony_black_03.png" width="15%">
+                            <img src="https://4203549.fs1.hubspotusercontent-na1.net/hubfs/4203549/__hs-marketplace__/MSSQL-1-1.png"
+                                width="50%" />
+                        </div>
+
+                    </div>
+                </div>
+                <div class="backcard" id="backcard3">
+                    <div class="contenuback">
+                        <h2 class="hero glitch layers" data-text="Développeur Web">
+                            <span>FRANCOIS MECHIN</span>
+                        </h2>
+                        <br />
+                        <span id="textback">Cliquez sur <strong>"Compétences"</strong> pour retourner la carte !</span>
+                    </div>
+                </div>
+            </div>
+        </DIV>
+        <DIV class="flip-container">
+            <div class="flexcontainer">
+                <div class="card cardstudent" id="cardstudent">
+                    <div class="container">
+
+                        <div class="leftboxstudent">
+                        </div>
+                        <div class="rightboxstudent">
+                            <div class="rb-container">
+                                <ul class="rb">
+                                    <li class="rb-item" ng-repeat="itembx">
+                                        <div class="timestamp">
+                                            14 mars 2022 à<br> EN COURS
+                                        </div>
+                                        <div class="item-title">
+                                            Formation <br> Développement web et web mobile avec anglais renforce <BR>
+                                            Equivalent BAC+2 </div>
+
+                                    </li>
+                                    <li class="rb-item" ng-repeat="itembx">
+                                        <div class="timestamp">
+                                            Fevrier 2018 à<br> Janvier 2019
+                                        </div>
+                                        <div class="item-title">Mission Locale <br>Garantie Jeune - Aide à l'insertion
+                                        </div>
+
+                                    </li>
+
+                                    <li class="rb-item" ng-repeat="itembx">
+                                        <div class="timestamp">
+                                            Septembre 2016 <br> Aristide Briand - Evreux
+                                        </div>
+                                        <div class="item-title">BAC Professionnel Commerce</div>
+
+                                    </li>
+
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="backcard flipCard" id="backcard4">
+                    <div class="contenuback">
+                        <h2 class="hero glitch layers" data-text="Développeur Web">
+                            <span>FRANCOIS MECHIN</span>
+                        </h2>
+                        <br />
+                        <span id="textback">Cliquez sur <strong>"Formations"</strong> pour retourner la carte !</span>
+                    </div>
+                </div>
+            </div>
+        </DIV>
+    </section>
+
+    <section class="middlebutton">
+        <a href="mailto:f.mechin@protonmail.com?subject=Candidature STAGE Développement Web">
+            <button id="contact">Envoyer un mail</button>
+        </a>
+        <a href="files/CV_FRANCOISMECHIN.pdf" target="_blank">
+            <button id="buttoncv">Télécharger un CV PDF</button>
+        </a>
+    </section>
+
+    <footer></footer>
+
+
+
+    <script src="loading.js"></script>
+    <script src="home.js"></script>
+    <script src="projects.js"></script>
+</body>
+
+</html>
